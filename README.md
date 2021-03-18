@@ -15,4 +15,4 @@
 |   날짜    |  유형  | 문제번호 |
 | :-------: | :----: | :------: |
 | 3.18~3.25 | String | [백준 9935:문자열 폭발](https://www.acmicpc.net/problem/9935) |
-| 3.18~3.25 | String | [백준 1747:소수&팰린드롬](https://www.acmicpc.net/problem/1747) |
+| 3.18~3.25 | String | [백준 17413:단어 뒤집기2](https://www.acmicpc.net/problem/17413) |
