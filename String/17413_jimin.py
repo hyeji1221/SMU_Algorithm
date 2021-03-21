@@ -28,4 +28,6 @@ for i in str:
             tag_bool = False
             result = result + ans
             ans = ""
+
+# 마지막 단어는 공백이 없어 result와 합쳐지지 않아서 따로 추가
 print(result+ans)
