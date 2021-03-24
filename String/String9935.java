@@ -4,132 +4,43 @@ import java.io.InputStreamReader;
 
 
 public class String9935 {
-    static String origin;  //¹®ÀÚ¿­ : ¾ËÆÄºª + ¼ıÀÚ
+    static String origin;  
     static String bomb;
     static String find;
- //  static char[] s;
-  //  static int a;    //ÀÎµ¦½º ½ÃÀÛ À§Ä¡
-    
-    //static Stack<String> st;  //ºĞ¸® ¹®ÀÚ¿­ ´ãÀ» ½ºÅÃ
-    
+	
 	public static void main(String[] args) throws IOException{
-		//Æø¹ß ¹®ÀÚ¿­ : p¶ó ÇÒ¶§, 
-		//s ¾È¿¡ p°¡ Æ÷ÇÔµÇ¾î ÀÖÀ¸¸é ¸ğµçp ³¯¶ó°¡°í ³²Àº s ÀÌ¾îºÙÀÌ±â
-		//¸ğµç p°¡ s¿¡ ¾øÀ»¶§°¡Áö Æø¹ß ¹İº¹, but »õ·Î »õÀÎ ¹®ÀÚ¿­¿¡ p°¡ Æ÷ÇÔµÇ¾î ÀÖÀ»¼öµµ ÀÖ´Ù
-		//Ã³À½ ³ª¿À´Â pÁ¦°Å=> ºÙÀÌ±â => °è¼ÓÇØ¼­ p Á¦°Å
-		//1.s.contains()»ç¿ë
-		//p±âÁØ ¾Õ¿¡ ¹®ÀÚ¿­ÇÏ°í µÚ¿¡ ¹®ÀÚ¿­À» ½ºÅÃ¿¡ ³Ö¾î³ö=> ²¨³»¼­ °Ë»çÇÏ°í Æ÷ÇÔµÇ¾îÀÖÀ¸¸é ´Ù½Ã ºĞ¸® =>
-		
-		//mirkovC4nizCC44
-		//(¿©±âºÎÅÍ ½ºÅÃ ¹İº¹¹®)
-		//mirkov
-		//nizCC44
-		
-		//mirkovnizCC44
-		
-		//mirkovnizC
-		//4
-		
-		//mirkovnizC4
-		
-		//mirkovniz
-		
-		//ÀÌÈÄ 4 + nizC ÇÕÃ¼ => nizC4 => Á¦°Å niz
-		//ÀÌÈÄ mikrov + niz => mikrovniz
-		//½ºÅÃ¿¡ ³ÖÀ»¶§ µÚ¿¡ ºĞ¸®µÈ ¹®ÀÚ¿­ ºÎÅÍ ³ÖÀ¸¸é µÇ±ä ÇÏ´Âµ¥ ..À½.
-		/*
-		 *1. ¿ì¼± ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­(input)À» °Å²Ù·Î Stack¿¡ ³Ö¾îÁØ´Ù
-
-          2. Stack¿¡ ÇÑ ±ÛÀÚ¾¿ ³Ö¾îÁÙ ¶§¸¶´Ù topÀ» ÆøÅº ¹®ÀÚ¿­(bomb)ÀÇ Ã¹±ÛÀÚ¿Í ºñ±³ÇÑ´Ù.
-           2-1. Ã¹±ÛÀÚ°¡ °°À¸¸é ±× ´ÙÀ½ ¹®ÀÚ¸¦ ºñ±³ÇØ¼­ bomb¿Í °°Àº ±ÛÀÚÀÎÁö È®ÀÎÇÑ´Ù.
-
-           2-2. °°Àº ±ÛÀÚ°¡ ¾Æ´Ï¸é isBomb´Â false°¡ µÇ°í,
-
-           2-3. bomb¿Í ¿Ïº®ÇÏ°Ô °°´Ù¸é(isBomb==true) bombÀÇ ±æÀÌ¸¸Å­ stack¿¡¼­ popÀ» ½ÃÄÑÁØ´Ù.
-
-   ¡æ ÀÌ·¸°Ô ±ÛÀÚ°¡ ÇÏ³ª¾¿ µé¾î¿Ã ¶§¸¶´Ù checkÇØÁÖ¸é ÇÑ²¨¹ø¿¡ ³Ö°í È®ÀÎÇÏ´Â °Íº¸´Ù ÈÎ¾À È¿À²ÀûÀÌ´Ù
-          3. ÆøÅºÀ» ÀüºÎ ÅÍ¶ß¸®°í Ãâ·Â  
-         //½ºÅÃÀ» »ç¿ëÇÏ¸é ½ºÅÃ¿¡¼­ POP, PUSH ÇÏ´Â °úÁ¤¿¡¼­ ½Ã°£°ú ¸Ş¸ğ¸®¸¦ ¸¹ÀÌ Àâ¾Æ¸Ô¾î ==> char¹è¿­À» ÀÌ¿ëÇØ¼­ ±¸Çö!
-		 */
-		
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		origin = bf.readLine();
 		bomb = bf.readLine();
 	
 		find = delete_bomb(origin, bomb);
-		//ºó ¹®ÀÚ¿­ÀÌ¸é  ¹®Á¦ÀÇ Á¶°ÇÀÎ FRULA Ãâ·Â
+		//ë¹ˆ ë¬¸ìì—´ì´ë©´  ë¬¸ì œì˜ ì¡°ê±´ì¸ FRULA ì¶œë ¥
 		System.out.println(find.length() == 0 ? "FRULA" : find);
 	}
 	
-	public static String delete_bomb(String s, String bomb ) {  //±ÛÀÚ°¡ ÆøÅºÀÎÁö Ã¼Å©(ÇÏ³ª¾¿ ³ª¸ÓÁö ºÎºĞ Ã¼Å©ÇØ³ª°¡±â)
+	public static String delete_bomb(String s, String bomb ) {  //ê¸€ìê°€ í­íƒ„ì¸ì§€ ì²´í¬(í•˜ë‚˜ì”© ë‚˜ë¨¸ì§€ ë¶€ë¶„ ì²´í¬í•´ë‚˜ê°€ê¸°)
 		char[] result = new char[s.length()];
 		int idx = 0;
 		
 		for(int i = 0; i < s.length() ;i++) {
-			result[idx] = s.charAt(i);   //ÇÏ³ª¾¿ ¸®¼³Æ®¿¡ Áı¾î ³Ö±â
-			if(isBomb(result, idx, bomb)) {   //result ¹è¿­¿¡ ÆøÅºÀÌ µé¾îÀÖÀ¸¸é(´Ù ³Ö°í³ª¼­ Á¦°Å)
+			result[idx] = s.charAt(i);   //í•˜ë‚˜ì”© ë¦¬ì„¤íŠ¸ì— ì§‘ì–´ ë„£ê¸°
+			if(isBomb(result, idx, bomb)) {   //result ë°°ì—´ì— í­íƒ„ì´ ë“¤ì–´ìˆìœ¼ë©´(ë‹¤ ë„£ê³ ë‚˜ì„œ ì œê±°)
 				idx -= bomb.length();
 			}
-			idx++;    //±ÛÀÚ°¡ ÆøÅºÀÌ ¾Æ´Ï¸é °è¼ÓÇØ¼­ ´ÙÀ½ ±ÛÀÚ Áı¾î³Ö±â
+			idx++;    //ê¸€ìê°€ í­íƒ„ì´ ì•„ë‹ˆë©´ ê³„ì†í•´ì„œ ë‹¤ìŒ ê¸€ì ì§‘ì–´ë„£ê¸°
 		}
-		
-		//result.toString() ÇÏ¸é ¾ÈµÇÁö ±× Å©±â¸¸Å­ ±ÛÀÚ°¡ µé¾î ÀÖÁö ¾ÊÀ¸´Ï±î
+	
 		return String.valueOf(result, 0, idx);
 	}
 	
 	public static boolean isBomb(char[] result, int idx, String bomb) {
 		
-		if(idx < bomb.length() - 1) {return false;}  //ÆøÅº ¹®ÀÚ¿­ ±æÀÌº¸´Ù ÀÛÀ¸¸é false¸®ÅÏ
+		if(idx < bomb.length() - 1) {return false;}  //í­íƒ„ ë¬¸ìì—´ ê¸¸ì´ë³´ë‹¤ ì‘ìœ¼ë©´ falseë¦¬í„´
 		for(int i = 0; i < bomb.length() ; i++) {
-			//ÇöÀç ÀÎµ¦½º - ÆøÅº ±æÀÌ¸¸Å­ »©¸é Ã³À½ ±ÛÀÚºÎÅÍ ºñ±³°¡´É
-			//±ÛÀÚ°¡ ´Ù¸£¸é false ¸®ÅÏ
+			//í˜„ì¬ ì¸ë±ìŠ¤ - í­íƒ„ ê¸¸ì´ë§Œí¼ ë¹¼ë©´ ì²˜ìŒ ê¸€ìë¶€í„° ë¹„êµê°€ëŠ¥
+			//ê¸€ìê°€ ë‹¤ë¥´ë©´ false ë¦¬í„´
 			if(bomb.charAt(i) != result[idx - bomb.length() + 1 + i]) { return false;}
 		}
 		return true;
 	}
 }
-		
-		/*
-		st.push(origin);    //¿øº» ¹®ÀÚ¿­ ½ºÅÃ¿¡ Ãß°¡
-		while(!st.isEmpty()) {  //½ºÅÃÀÌ ºô¶§±îÁö ¹İº¹
-			
-			String s = st.pop();  //¸¶Áö¸· ÇÏ³ª ³²°í ÆË, 
-			//ÆĞÅÏÀÌ Æ÷ÇÔµÇ¾î ÀÖ´Â ¹®ÀÚ¿­ÀÌ¸é ½ºÅÃ¿¡ Ãß°¡, ¿Ï·áµÈ°Å¸é ½ºÅÃ¿¡¼­ ²¨³»Áö¸¶?
-			if(is_contain(s, bomb)) { //a¿¡ ÀúÀåµÇ¾î ÀÖ¾î
-				
-				String s1 = s.substring(0, a ); //¹®ÀÚ¿­ ºĞ¸®
-				String s2 = s.substring(a + bomb.length() , s.length());
-
-				st.push(s2);
-				st.push(s1);  //¾Õ¿¡²¨¸¦ ³ªÁß¿¡ ³Ö±â
-				
-			}else {    //¾ÈÆ÷ÇÔµÇ¾î ÀÖÀ¸¸é ¿Ï·áµÈ ºÎºĞ ¹®ÀÚ¿­ , ³ªÁß¿¡ ÃÖÁ¾ Ãâ·ÂÇÒ ¹®ÀÚ¿­¿¡ ºÙÀÌ±â¤¿ =>x, ¹®ÀÚ¿­ ³¢¸® ºÙ¿©¼­ ´Ù½Ã ³ö¾ßÇØ?
-				//ÇÏ³ª¸¸ ³²¾Æ¼­ ´õ ÆËÇÒ°Ô ¾øÀ¸¸é
-				if(st.size() >= 1) {   //ÀÌ¹Ì ¾Õ¿¡¼­ ÇÏ³ª ÆËÇßÀ¸´Ï±î ÇÏ³ª¸¸ ³²¾ÆÀÖÀ»²¨¾Æ³à
-					find = s + st.pop();
-					st.push(find);
-				}	
-				//³²¾ÆÀÖ´Â ¹®ÀÚ°¡ ¾ø´Â °æ¿ì°¡ ÀÖ´Ù. ÀÌ¶§´Â "FRULA"¸¦
-			}
-		}
-		
-		if(find.isBlank()) {System.out.println("FRULA");}
-		else {System.out.println(find);
-		}
-			
-		
-	}
-	
-	//±ÛÀÚ°¡ Æ÷ÇÔµÇ¾î ÀÖ´ÂÁö ¹¯°í ½ÃÀÛÀ§Ä¡ÇÏ°í ¹İÈ¯
-    //¸Ş¸ğ¸® ÃÊ°ú ÀÌÀ¯? ===> 1º¸´Ù Å©°Å³ª °°°í, 1,000,000
-	public static boolean is_contain(String s, String p) {
-		
-		
-		a = s.indexOf(p);  //±× Æ¯Á¤ ¹®ÀÚÀÇ ½ÃÀÛ ÀÎµ¦½º ¹İÈ¯
-
-		//ÇØ´ç ¹®ÀÚ¿­ Æ÷ÇÔÇÏ°í ÀÖÀ¸¸é
-		if(a > -1) { return true;}
-		else { return false;}
-	}
-}
-*/
