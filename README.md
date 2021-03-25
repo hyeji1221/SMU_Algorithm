@@ -18,3 +18,5 @@
 | :-------: | :----: | :------: |
 | 3.18~3.25 | String | [백준 9935:문자열 폭발](https://www.acmicpc.net/problem/9935) |
 | 3.18~3.25 | String | [백준 17413:단어 뒤집기2](https://www.acmicpc.net/problem/17413) |
+| 3.25~4.1 | Arrange(배열) | |
+| 3.25~4.1 | Arrange(배열) | |
