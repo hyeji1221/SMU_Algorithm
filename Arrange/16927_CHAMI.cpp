@@ -1,9 +1,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <algorithm>
+#include <vector>
 using namespace std;
-int N, M, R; // 회전 수
-int arr[302][302];
+int N, M, R;
+vecotr<vecot<int>> arr;
 
 void rotate(){
   int rotCnt = min(N, M) / 2;
@@ -33,15 +34,16 @@ void rotate(){
 int main(){
   cin.tie(0);
   cout.tie(0);
-  cin >> n,m,r;
-  for(int a=0; a<n; a++)
-    for(int b=0; b<m; b++)
+  cin >> N >> M >> R;
+  
+  for(int a=0; a < N; a++)
+    for(int b=0; b < M; b++)
       cin >> arr[a][b];
   
   rotate();
   
-  for(int a=0; a<n; a++){
-    for(int b=0; b<m; b++){
+  for(int a=0; a < N; a++){
+    for(int b=0; b < M; b++){
       cout << arr[a][b];
     }
     cout << '\n';
