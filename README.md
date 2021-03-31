@@ -14,9 +14,9 @@
 
 ### ✨ Week Study
 
-|   날짜    |  유형  | 문제번호 |
-| :-------: | :----: | :------: |
-| 3.18~3.25 | String | [백준 9935:문자열 폭발](https://www.acmicpc.net/problem/9935) |
-| 3.18~3.25 | String | [백준 17413:단어 뒤집기2](https://www.acmicpc.net/problem/17413) |
-| 3. 25~4.1 | Arrange(배열) | [백준 16927: 배열 돌리기2](https://www.acmicpc.net/problem/16927) |
-| 3. 25~4.1 | Arrange(배열) | [백준 5212: 지구온난화](https://www.acmicpc.net/problem/5212) |
+|   날짜    |  유형  | 출제자 | 문제번호 |
+| :-------: | :----: | :---: | :------: |
+| 3.18~3.25 | String | jimin3263 | [백준 9935:문자열 폭발](https://www.acmicpc.net/problem/9935) |
+| 3.18~3.25 | String | jimin3263 | [백준 17413:단어 뒤집기2](https://www.acmicpc.net/problem/17413) |
+| 3. 25~4.1 | Arrange(배열) | lasilla20 | [백준 16927: 배열 돌리기2](https://www.acmicpc.net/problem/16927) |
+| 3. 25~4.1 | Arrange(배열) | lasilla20 | [백준 5212: 지구온난화](https://www.acmicpc.net/problem/5212) |
