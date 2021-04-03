@@ -20,3 +20,5 @@
 | 3 .18~3 .25 | String | jimin3263 | [백준 17413:단어 뒤집기2](https://www.acmicpc.net/problem/17413) |
 | 3 .25~4 .1 | Arrange(배열) | lasilla20 | [백준 16927: 배열 돌리기2](https://www.acmicpc.net/problem/16927) |
 | 3 .25~4 .1 | Arrange(배열) | lasilla20 | [백준 5212: 지구온난화](https://www.acmicpc.net/problem/5212) |
+| 4 .2~4 .8 | LinkedList(연결리스트) | semi-cloud | [백준 1406: 에디터](https://www.acmicpc.net/problem/1406) |
+| 4 .2~4 .8 | LinkedList(연결리스트) | semi-cloud | [백준 3190: 뱀](https://www.acmicpc.net/problem/3190) |
