@@ -63,7 +63,7 @@ for (int i = 0; i < K; i++) {
 	cin >> a >> b;
 	
 	if(a==1 && b==1) return 0; //종료 조건
-	arr[r - 1][c - 1] = 1;
+	arr[a - 1][b - 1] = 1;
 }
 	
 cin >> L;
