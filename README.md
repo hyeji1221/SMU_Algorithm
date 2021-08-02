@@ -6,6 +6,7 @@
 - [lasilla20](https://github.com/lasilla20)
 - [semi-cloud](https://github.com/semi-cloud)
 - [hyeji1221](https://github.com/hyeji1221)
+- [yejiniee](https://github.com/yejiniee)
 
 ### 📖 진행 방식
 - 매주 하나의 주제 선정
