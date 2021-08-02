@@ -27,4 +27,5 @@
 | **Week1** <br>(3.18 ~ 3.25)| [백준 9935: 문자열 폭발](https://www.acmicpc.net/problem/9935)| [백준 17413: 단어 뒤집기2](https://www.acmicpc.net/problem/17413) |  |
 | **Week2** <br>(3.25 ~ 4.1)| [백준 16927: 배열 돌리기2](https://www.acmicpc.net/problem/16927) | [백준 5212: 지구온난화](https://www.acmicpc.net/problem/5212) | |
 | **Week3** <br>(4.2 ~ 4.8)| [백준 1406: 에디터](https://www.acmicpc.net/problem/1406) | [백준 3190: 뱀](https://www.acmicpc.net/problem/3190)| |
+| **Week3** <br>(8.2 ~ 8.9)|  | [백준 1181: 단어 정렬](https://www.acmicpc.net/problem/1181) | |
 
