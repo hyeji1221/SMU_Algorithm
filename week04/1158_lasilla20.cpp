@@ -4,7 +4,7 @@ using namespace std;
 int n, k;
 
 int main() {
-		cin >> n >> k;
+	cin >> n >> k;
 
 	/*큐로 구현
 	큐에 맨앞에 있는 사람을 k-1번 뒤로 보낸다
