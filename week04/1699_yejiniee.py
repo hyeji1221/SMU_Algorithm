@@ -12,5 +12,4 @@ for i in range(2,N+1):
         if dp[i]>dp[i-j**2]+1: #새로 구한 값이 더 작으면 바꿔줌
             dp[i]=dp[i-j**2]+1
 
-
 print(dp[N])
