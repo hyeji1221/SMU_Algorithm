@@ -23,11 +23,11 @@ N = int(sys.stdin.readline())
 
 dp = [x for x in range (N+1)] #최대갯수로 초기화
 square = [x * x for x in range(1, 317)] #제곱수를 저장
-for i in range(1, n + 1): 
+for i in range(1, N + 1): 
     s = []
     for j in square:
         if j > i:
             break
         s.append(dp[i - j])
     dp[i] = min(s) + 1
-print(dp[n])
+print(dp[N])
