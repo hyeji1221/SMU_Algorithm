@@ -1,7 +1,7 @@
 #Dinamic Programming을 활용
 
 '''
-#ver.1
+#ver.1-시간초과
 import sys
 N = int(sys.stdin.readline())
 
