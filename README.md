@@ -28,4 +28,5 @@
 | **Week2** <br>(3.25 ~ 4.1)| | [백준 16927: 배열 돌리기2](https://www.acmicpc.net/problem/16927) | [백준 5212: 지구온난화](https://www.acmicpc.net/problem/5212) | |
 | **Week3** <br>(4.2 ~ 4.8)| | [백준 1406: 에디터](https://www.acmicpc.net/problem/1406) | [백준 3190: 뱀](https://www.acmicpc.net/problem/3190)| |
 | **Week4** <br>(8.2 ~ 8.8)| [lasilla20](https://github.com/lasilla20) | [백준 1699: 제곱수의 합](https://www.acmicpc.net/problem/1699) | [백준 1158: 요세푸스 문제](https://www.acmicpc.net/problem/1158) | [백준 16236: 아기 상어 ](https://www.acmicpc.net/problem/16236) |
+| **Week5** <br>(8.9 ~ 8.15)|[yejiniee](https://github.com/yejiniee)| [백준 11047: 동전](https://www.acmicpc.net/problem/11047)| [백준 2606: 바이러스](https://www.acmicpc.net/problem/2606)| [백준 20210: 파일탐색기](https://www.acmicpc.net/problem/20210)|
 
