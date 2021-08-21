@@ -33,18 +33,18 @@ public class Main {
 			}
 			//여자인 경우
 			else{
-		        int l = index - 1;
-				    int r = index + 1;
-            arr[index] = 1- arr[index];    //현재 위치 바꾸기
+		        	int l = index - 1;
+				int r = index + 1;
+            			arr[index] = 1- arr[index];    //현재 위치 바꾸기
                   
-            while(l > 0 && r <= n) {
-                if(arr[l] == arr[r]) {      //대칭일 경우 스위칭
-                    arr[l] = 1 - arr[l];
-                    arr[r] = 1 - arr[r];
-                    l--;
-                    r++;
-                }else {break;}
-            }
+			        while(l > 0 && r <= n) {
+				    if(arr[l] == arr[r]) {      //대칭일 경우 스위칭
+				        arr[l] = 1 - arr[l];
+				        arr[r] = 1 - arr[r];
+				        l--;
+				        r++;
+				    }else {break;}
+                               }
 			}	
 		}
 		
