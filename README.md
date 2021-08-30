@@ -31,5 +31,5 @@
 | **Week5** <br>(8.9 ~ 8.16)|yejiniee| [백준 11047: 동전](https://www.acmicpc.net/problem/11047)| [백준 2606: 바이러스](https://www.acmicpc.net/problem/2606)| [백준 1780: 종이의 개수](https://www.acmicpc.net/problem/1780)|  
 | **Week6** <br>(8.16 ~ 8.23)|jimin3263| [백준 1890: 점프](https://www.acmicpc.net/problem/1890)| [백준 1244: 스위치 켜고 끄기](https://www.acmicpc.net/problem/1244)| [백준 9663: N-Queen](https://www.acmicpc.net/problem/9663)|
 | **Week7** <br>(8.23 ~ 8.30)|semi-cloud| [백준 6603: 로또](https://www.acmicpc.net/problem/6603)| [백준 2156: 포도주 시식](https://www.acmicpc.net/problem/2156) | [백준 9019: DSLR](https://www.acmicpc.net/problem/9019)|
-| **Week8** <br>(8.30 ~ 9.6)|ㅣlasilla20|
+| **Week8** <br>(8.30 ~ 9.6)|lasilla20|
 
