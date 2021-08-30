@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+//1부터 시작할 것이기 때문에 [0]=0
+int arr[101] = { 0, };
+int gen[101] = { 0, };
+int fi_sw[101] = { 0, };
+
+void change(int *arr) { //값을 반전시켜줌
+	if (*arr == 1) *arr = 0;
+	else *arr = 1;
+}
+
+int main() {
+	int n, stu, i, j;
+	cin >> n;
+	for (int i = 1; i <= n; i++) cin >> arr[i];
+
+	cin >> stu;
+	for (int i = 1; i <= stu; i++) {
+		cin >> gen[i] >> fi_sw[i];
+	}
+
+	for (int i = 1; i <= stu; i++) {
+		if (gen[i] == 1)//남학생 
+		{
+			for (j = 1; ; j++)
+			{
+				if (j*fi_sw[i] > n) break; // 탈출조건 
+				change(&arr[j*fi_sw[i]]); //배수 인덱스로 바로가서 처리
+			}
+		}
+		else if (gen[i] == 2) //여학생 
+		{
+			int first_index = fi_sw[i];//바꿔줄 범위 (해당 인덱스는 무조건 바뀜)
+			int last_index = fi_sw[i];
+
+			for (j = 1; ; j++)
+			{
+				if (fi_sw[i] - j < 1 || fi_sw[i] + j > n) break;//탈출조건
+
+				if ((fi_sw[i] >= 2 && fi_sw[i] <= n - 1) && (arr[fi_sw[i] - j] == arr[fi_sw[i] + j]))
+				{
+					first_index = fi_sw[i] - j;
+					last_index = fi_sw[i] + j;
+				}
+				else break;
+			}
+			//change 
+			for (j = first_index; j <= last_index; j++) {
+				change(&arr[j]);
+			}
+		}
+	}
+
+	if(n <= 20)
+	for(i = 1; i <= n; i++) cout << arr[i] <<" ";
+	
+	else if(n > 20) //20개씩 출력  
+	{
+		i=1;
+		while(i <= n){
+			if(i%20==1&&i>20){
+				cout << "\n";
+			}
+			cout<<arr[i]<<" ";
+			i++;
+		}
+	}
+	
+	else ;
+	return 0;
+}
