@@ -7,10 +7,9 @@ def star_draw(n, idx):
     l=4*n-3
     
     for i in range(idx, l+idx):
-        #가로줄
         star[idx][i]='*' #위
         star[idx+l-1][i]='*' #아래
-        #세로줄
+        
         star[i][idx]='*' #왼쪽
         star[i][idx+l-1]='*' #오른쪽
 
