@@ -33,4 +33,4 @@
 | **Week7** <br>(8.23 ~ 8.30)|semi-cloud| [백준 6603: 로또](https://www.acmicpc.net/problem/6603)| [백준 2156: 포도주 시식](https://www.acmicpc.net/problem/2156) | [백준 9019: DSLR](https://www.acmicpc.net/problem/9019)|
 | **Week8** <br>(8.30 ~ 9.6)|lasilla20| [백준 9655: 돌 게임](https://www.acmicpc.net/problem/9655)| [백준 9656: 돌 게임2](https://www.acmicpc.net/problem/9656)| [백준 1520: 내리막 길](https://www.acmicpc.net/problem/1520)|
 | **Week9** <br>(9.7 ~ 9.14)|yejiniee| [백준 2792: 보석상자](https://www.acmicpc.net/problem/2792)| [백준 2630: 색종이 만들기](https://www.acmicpc.net/problem/2630)| [백준 10994: 별 찍기 - 19](https://www.acmicpc.net/problem/10994)|
-
+| **Week10** <br>(9.20 ~ 9.27)|jimin3263|[백준 5557: 1학년](https://www.acmicpc.net/problem/5557)| [백준 3079: 입국 심사](https://www.acmicpc.net/problem/3079)|[백준 2285: 우체국](https://www.acmicpc.net/problem/2285) |
